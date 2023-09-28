@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.example.imagen.ui.theme.ImagenTheme
 
 class MainActivity : ComponentActivity() {
@@ -38,8 +39,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Image(painter = painterResource(id = R.drawable.logo), contentDescription = "dibujito")
         Text(
             text = stringResource(id = R.string.saludos),
-            fontSize = 20.SP,
-            color = Color.grey
+            fontSize = 20.sp,
+            // color = Color.grey
         )
 
 }
